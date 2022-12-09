@@ -10,7 +10,6 @@ pivot1=pickle.load(open("pivot1.pkl",'rb'))
 score1=pickle.load(open("score1.pkl",'rb'))
 pivot2=pickle.load(open("pivot2.pkl",'rb'))
 score2=pickle.load(open("score2.pkl",'rb'))
-topAuthors=pickle.load(open("top_25_Author.pkl",'rb'))
 
 
 app = Flask(__name__)
@@ -109,5 +108,5 @@ def recommendation():
 
 
 if __name__=='__main__':
-    app.run(debug=False, port='0.0.0.0')
+    app.run(debug=True, port=8080)
 
